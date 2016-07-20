@@ -235,6 +235,132 @@
             
               
                 
+                <a class="post-title-link" href="/2016/07/20/JDK-环境变量/" itemprop="url">
+                  JDK 环境变量
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-20T22:06:44+08:00" content="2016-07-20">
+              2016-07-20
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="jdk-下载"><a href="#jdk-下载" class="headerlink" title="jdk 下载"></a>jdk 下载</h3><p>首先打开 <a href="http://www.oracle.com/technetwork/java/javase/archive-139210.html" target="_blank" rel="external">官网</a>下载指定的版本即可。</p>
+<h3 id="jdk-安装"><a href="#jdk-安装" class="headerlink" title="jdk 安装"></a>jdk 安装</h3><p>linux下直接下载tar.gz文件<br>将文件解压到指定目录下，一般为：/opt/java/jdk1.7类似的目录</p>
+<h3 id="环境变量配置"><a href="#环境变量配置" class="headerlink" title="环境变量配置"></a>环境变量配置</h3><p>打开/etc/profile 文件</p>
+<pre><code>vim /etc/profile
+</code></pre><p>在文件末尾增加配置：</p>
+<pre><code>export JAVA_HOME=/opt/java/jdk1.7
+export CLASSPATH=.:$JAVA_HOME/lib
+export PATH=$JAVA_HOME/bin:$PATH
+</code></pre><p>更新完profile之后，执行以下命令试修改立即生效</p>
+<pre><code>source /etc/profile
+</code></pre><p>然后再命令行输入</p>
+<pre><code>java -version 
+</code></pre><p>如果正确输出版本号，则表示配置成功。</p>
+<p>待完善</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/07/02/hello-world/" itemprop="url">
                   Hello World
                 </a>
@@ -357,13 +483,27 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
